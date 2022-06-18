@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <!--Layout pour les widget du Poids-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poids"
+            android:layout_gravity="center"
+            android:textColor="@color/red"/>
+
+        <EditText
+            android:id="@+id/idPoids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:hint="Poids"/>
+
+    </LinearLayout>
+
+    <!--Layout pour les widget de la Taille-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Taille"
+            android:textColor="@color/red"/>
+
+        <EditText
+            android:id="@+id/idTaille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:hint="Taille"/>
+
+    </LinearLayout>
+
+    <!--Layout pour les widgets des boutons radio-->
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:id="@+id/idUniteMesure"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/idMetre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Mètre"/>
+
+            <RadioButton
+                android:id="@+id/idCentimetre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centimètre"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/idCalculer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculer l'IMC"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/idEffacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="EFFACER"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:text="Résultat : "
+        />
+
+
+    <TextView
+        android:id="@+id/idResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="Cliquer sur le bouton 'Calculer IMC'"/>
+    <TextView
+        android:id="@+id/idIndicateurResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginBottom="4dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/chipmunk"/>
+
+
+</LinearLayout>
+
+
